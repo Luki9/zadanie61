@@ -7,13 +7,14 @@ public class Home {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Temperatura w pokoju");
-        int temperatureCooldown = scanner.nextInt();
+        int temperature = scanner.nextInt();
         scanner.nextLine();
 
 
-        Room room = new Room("info", 30, temperatureCooldown, true);
+        Room room = new Room("info", 30, temperature, true);
 
-        System.out.println(room.getTemperaturCooldown());
+        room.temperature();
+        System.out.println(room.getTemperature());
 
     }
 }

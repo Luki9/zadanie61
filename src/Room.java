@@ -5,7 +5,6 @@ public class Room {
     private String name;
     private int squareMetre;
     private int temperature;
-    private int temperaturCooldown;
     private boolean airConditionOn;
 
 
@@ -48,14 +47,6 @@ public class Room {
 
     public void setAirConditionOn(boolean airConditionOn) {
         this.airConditionOn = airConditionOn;
-    }
-
-    public int getTemperaturCooldown() {
-        return temperaturCooldown;
-    }
-
-    public void setTemperaturCooldown(int temperaturCooldown) {
-        this.temperaturCooldown = temperaturCooldown;
     }
 
     public Room(String name, int squareMetre, int temperature, boolean airConditionOn) {
